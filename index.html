@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Firebase Chatroom</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+  <div id="chatroom-container">
+    <div id="chatroom-header">
+      <h2>Chatroom</h2>
+      <input type="text" id="room-name" placeholder="Enter chatroom name">
+      <input type="text" id="username" placeholder="Enter username">
+      <button onclick="joinOrCreateRoom()">Join/Create Room</button>
+    </div>
+    <div id="chatroom-messages"></div>
+    <div id="chatroom-footer">
+      <input type="text" id="message-input" placeholder="Type your message">
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-database.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
